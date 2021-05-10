@@ -1,9 +1,13 @@
 - shell:
   - 
     command: sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' 
-    description: while scanning a quoted scalar
+    description: Install plug, the neovim plugin manager
 - link:
     ~/.config/nvim/init.vim:
       create: true
       force: true
       path: nvim/init.vim
+- shell:
+  - 
+    command: nvim +PlugInstall +qall
+    description: Install neovim plugins
