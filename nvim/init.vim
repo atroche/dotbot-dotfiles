@@ -5,6 +5,7 @@ set shiftwidth=4
 set expandtab
 
 call plug#begin()
+Plug 'lifepillar/vim-solarized8'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
