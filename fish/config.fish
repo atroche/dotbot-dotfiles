@@ -4,8 +4,9 @@ contains ~/.cargo/bin $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
 contains ~/.linuxbrew/bin $fish_user_paths; or set -Ua fish_user_paths ~/.linuxbrew/bin
 
 alias vim nvim
-alias fd fdfind
-alias cat bat
+#alias ls lsd
+#alias fd fdfind
+#alias cat bat
 alias y yarn
 alias yr "yarn run"
 alias yi "yarn install"
