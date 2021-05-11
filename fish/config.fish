@@ -11,7 +11,6 @@ alias yr "yarn run"
 alias yi "yarn install"
 alias yip "yarn install --pure-lockfile"
 alias clean-merged 'git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
-alias ls "lsd"
 alias o open
 
 
