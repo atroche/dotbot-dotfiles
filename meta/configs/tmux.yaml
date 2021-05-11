@@ -7,7 +7,7 @@
     ~/.tmux.conf:
 - shell:
   -
-    command: fish -c "test $TMUX; and tmux source ~/.tmux.conf"
+    command: fish -c "test $TMUX; and tmux source ~/.tmux.conf; true"
     description: Reloading tmux conf if inside tmux session
     quiet: false
   -
