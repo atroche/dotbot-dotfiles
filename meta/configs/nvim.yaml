@@ -11,3 +11,4 @@
   - 
     command: nvim +PlugInstall +qall
     description: Install neovim plugins
+
