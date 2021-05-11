@@ -21,4 +21,3 @@ alias prune "docker system prune --volumes"
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/alistair/software/google-cloud-sdk/path.fish.inc' ]; . '/home/alistair/software/google-cloud-sdk/path.fish.inc'; end
 
-thefuck --alias | source 
