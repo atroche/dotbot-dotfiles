@@ -16,6 +16,7 @@ alias o open
 alias g git
 alias gs "git status"
 alias gd "git diff"
+alias gd "git pull"
 
 
 alias prune "docker system prune --volumes"
