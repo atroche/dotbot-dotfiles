@@ -7,8 +7,8 @@
     ~/.tmux.conf:
 - shell:
   -
-    command: tmux source ~/.tmux.conf
-    description: Reloading tmux conf
+    command: fish -c "test $TMUX; and tmux source ~/.tmux.conf"
+    description: Reloading tmux conf if inside tmux session
     quiet: false
   -
     command: ~/.tmux/plugins/tpm/bin/install_plugins
