@@ -7,6 +7,9 @@
     ~/.tmux.conf:
 - shell:
   -
+    command: tmux source ~/.tmux.conf
+    description: Reloading tmux conf
+  -
     command: ~/.tmux/plugins/tpm/bin/install_plugins
     description: Installing tmux plugins
 
