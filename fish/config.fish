@@ -13,6 +13,9 @@ alias yi "yarn install"
 alias yip "yarn install --pure-lockfile"
 alias clean-merged 'git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 alias o open
+alias g git
+alias gs git status
+alias gd git diff
 
 
 alias prune "docker system prune --volumes"
