@@ -13,6 +13,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'preservim/nerdtree'
 Plug 'mitsuhiko/vim-jinja'
 Plug 'saltstack/salt-vim'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 nnoremap <C-k>b :NERDTreeToggle<CR>
