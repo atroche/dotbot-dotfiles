@@ -1,6 +1,6 @@
 - shell:
   -
-    command: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm; or true
+    command: fish -c "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm; or true"
     description: Installing tmux plugin manager
     quiet: false
 - link:
