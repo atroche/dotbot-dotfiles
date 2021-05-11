@@ -1,0 +1,13 @@
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+[user]
+	name = Alistair Roche
+	email = alistair@seermedical.com
+[push]
+	default = current
+[pull]
+	rebase = false
+[core]
+	editor = nvim

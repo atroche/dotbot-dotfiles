@@ -14,7 +14,6 @@ alias clean-merged 'git branch --merged | egrep -v "(^\*|master|dev)" | xargs gi
 alias ls "lsd"
 alias o open
 
-thefuck --alias | source 
 
 alias prune "docker system prune --volumes"
 
@@ -22,3 +21,4 @@ alias prune "docker system prune --volumes"
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/alistair/software/google-cloud-sdk/path.fish.inc' ]; . '/home/alistair/software/google-cloud-sdk/path.fish.inc'; end
 
+thefuck --alias | source 
