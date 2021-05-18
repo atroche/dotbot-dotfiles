@@ -10,7 +10,7 @@
         quiet: false
 - create:
     - $HOME/.config
-
+    - $HOME/.local/bin
 - clean:
     $HOME:
         force: true
