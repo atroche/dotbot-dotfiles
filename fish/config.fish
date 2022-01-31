@@ -3,6 +3,7 @@ contains ~/.local/bin $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
 contains ~/.cargo/bin $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
 contains ~/.linuxbrew/bin $fish_user_paths; or set -Ua fish_user_paths ~/.linuxbrew/bin
 
+alias p pepper
 alias vim nvim
 #alias ls lsd
 #alias fd fdfind
@@ -22,6 +23,13 @@ alias gd "git pull"
 alias prune "docker system prune --volumes"
 
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/alistair/software/google-cloud-sdk/path.fish.inc' ]; . '/home/alistair/software/google-cloud-sdk/path.fish.inc'; end
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/alistair/software/google-cloud-sdk/path.fish.inc' ]; . '/Users/alistair/software/google-cloud-sdk/path.fish.inc'; end
+
+set -x PQ_LIB_DIR (brew --prefix libpq)"/lib"
+
+alias no-false="pcregrep -M '.*:\n +[^F ]'"
+
+source /usr/local/opt/asdf/libexec/asdf.fish
