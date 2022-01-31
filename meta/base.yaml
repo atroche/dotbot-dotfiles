@@ -3,13 +3,14 @@
         relink: true
         create: true
         force: true
+        quiet: false
     shell:
         stdout: true
         stderr: true
-
+        quiet: false
 - create:
     - $HOME/.config
-
+    - $HOME/.local/bin
 - clean:
     $HOME:
         force: true

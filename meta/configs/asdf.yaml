@@ -1,0 +1,8 @@
+- shell:
+  -
+    command: fish -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0; true"
+  -
+    command: fish -c "mkdir -p ~/.config/fish/completions; and ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions; true"
+
+- link:
+    ~/.config/fish/conf.d/load_asdf.fish: fish/load_asdf.fish

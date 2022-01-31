@@ -1,14 +1,12 @@
 - shell:
   -
-    command: rm ~/.config/fish/fish_plugins
-    quiet: false
+    command: rm ~/.config/fish/fish_plugins; true
 - link:
     ~/.config/fish/config.fish: fish/config.fish
 - shell:
   -
     command: fish -c "curl -sL https://git.io/fisher | source; and fisher install jorgebucaran/fisher"
     description: Installing fisher
-    quiet: false
 - link:
     ~/.config/fish/fish_plugins:
       path: fish/fish_plugins
@@ -17,4 +15,3 @@
   -
     command: fish -c "fisher update"
     description: Updating fish plugins
-    quiet: false

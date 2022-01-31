@@ -2,13 +2,12 @@
   -
     command: fish -c "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm; or true"
     description: Installing tmux plugin manager
-    quiet: false
 - link:
     ~/.tmux.conf:
 - shell:
   -
-    command: tmux source ~/.tmux.conf
-    description: Reloading tmux conf
+    command: fish -c "test $TMUX; and tmux source ~/.tmux.conf; true"
+    description: Reloading tmux conf if inside tmux session
   -
     command: ~/.tmux/plugins/tpm/bin/install_plugins
     description: Installing tmux plugins

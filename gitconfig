@@ -2,6 +2,8 @@
 	st = status
 	ci = commit
 	co = checkout
+    # current branch
+    cb = rev-parse --abbrev-ref HEAD
 [user]
 	name = Alistair Roche
 	email = alistair@seermedical.com
@@ -11,3 +13,5 @@
 	rebase = false
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main
