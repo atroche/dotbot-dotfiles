@@ -32,7 +32,6 @@ alias prune "docker system prune --volumes"
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/alistair/software/google-cloud-sdk/path.fish.inc' ]; . '/Users/alistair/software/google-cloud-sdk/path.fish.inc'; end
 
-set -x PQ_LIB_DIR (brew --prefix libpq)"/lib"
 
 alias no-false="pcregrep -M '.*:\n +[^F ]'"
 
@@ -56,6 +55,8 @@ switch (uname)
     case FreeBSD NetBSD DragonFly
     case '*'
 end
+
+set -x PQ_LIB_DIR (brew --prefix libpq)"/lib"
 
 
 set -gx EMAIL alistair@seermedical.com
