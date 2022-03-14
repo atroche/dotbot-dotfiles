@@ -54,6 +54,8 @@
      :nvim-treesitter/nvim-treesitter {:mod :treesitter}
 
      :jghauser/mkdir.nvim {:config (fn [] (require :mkdir))}
+
+     :dag/vim-fish {}
      ; :rmagatti/auto-session {:mod :auto-session} ;    use {
      ; 
      ;    use {
