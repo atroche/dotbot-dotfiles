@@ -60,6 +60,7 @@
      :jghauser/mkdir.nvim {:config (fn [] (require :mkdir))}
 
      :ggandor/lightspeed.nvim {:mod :lightspeed}
+     :dag/vim-fish {}
      ; :rmagatti/auto-session {:mod :auto-session} ;    use {
      ; 
      ;    use {
