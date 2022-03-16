@@ -49,11 +49,17 @@
                            :requires [[:nvim-telescope/telescope.nvim]]}
 
      :neovim/nvim-lspconfig {:mod :lspconfig}
+     ; :jose-elias-alvarez/nvim-lsp-ts-utils {}
+     :jose-elias-alvarez/null-ls.nvim {}
+     :MunifTanjim/prettier.nvim {}
+
      :ray-x/lsp_signature.nvim {}
 
      :nvim-treesitter/nvim-treesitter {:mod :treesitter}
 
      :jghauser/mkdir.nvim {:config (fn [] (require :mkdir))}
+
+     :ggandor/lightspeed.nvim {:mod :lightspeed}
      ; :rmagatti/auto-session {:mod :auto-session} ;    use {
      ; 
      ;    use {

@@ -2,20 +2,26 @@
   {require {
              lsputil lspconfig.util
              lspconfig lspconfig
+             ; tsutils nvim-lsp-ts-utils
+             util dotfiles.util
              cfgs lspconfig.configs}
    autoload {nvim aniseed.nvim
              }})
-; salt-lsp custom config
+
+(defn set-keymaps [bufnr]
+  (let [remap (fn [from to] (util.bufmap bufnr from to {:silent true}))]
+    (remap :gD "lua vim.lsp.buf.declaration()")
+    (remap :gd "lua vim.lsp.buf.definition()")
+    (remap :gI "lua vim.lsp.buf.implementation()")))
+
 
 (lspconfig.pyright.setup {})
 
-; (local salt-lsp-config
-;   {:default_config {:cmd ["salt_lsp_server" "--tcp"]
-;                     :filetypes ["jinja" "sls"]
-;                     :root_dir (lsputil.root_pattern ".git")}})
-; 
-; 
-; (tset cfgs :salt_lsp salt-lsp-config)
-; 
-; 
-; (lspconfig.salt_lsp.setup {})
+(lspconfig.tsserver.setup {:on_attach (fn [client bufnr]
+                                        ; (tsutils.setup)
+                                        ; (tsutils.setup_client client)
+                                        (set-keymaps bufnr)
+                                        )
+                           :flags {:debounce_text_changes 150}
+                           })
+

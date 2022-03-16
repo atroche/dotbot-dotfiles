@@ -23,5 +23,11 @@
       (nvim.buf_set_keymap 0 :n from to map-opts)
       (nvim.set_keymap :n from to map-opts))))
 
+(defn bufmap [bufnr from to opts]
+  (let [map-opts {:noremap true :silent opts.silent}
+        to (.. ":" to "<CR>")]
+      (print bufnr from to)
+      (nvim.buf_set_keymap bufnr :n from to map-opts)))
+
 (defn lnnoremap [from to]
   (nnoremap (.. "<leader>" from) to))
