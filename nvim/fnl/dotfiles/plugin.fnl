@@ -61,6 +61,7 @@
 
      :ggandor/lightspeed.nvim {:mod :lightspeed}
      :dag/vim-fish {}
+     :hashivim/vim-terraform {}
      ; :rmagatti/auto-session {:mod :auto-session} ;    use {
      ; 
      ;    use {

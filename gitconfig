@@ -13,5 +13,6 @@
 	rebase = false
 [core]
 	editor = nvim
+	excludesFile = ~/.gitignore
 [init]
 	defaultBranch = main

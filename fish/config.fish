@@ -1,4 +1,5 @@
 fish_vi_key_bindings
+contains ~/.rye/shims $fish_user_paths; or set -Ua fish_user_paths ~/.rye/shims
 contains ~/.local/bin $fish_user_paths; or set -Ua fish_user_paths ~/.local/bin
 contains ~/.cargo/bin $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
 contains ~/.linuxbrew/bin $fish_user_paths; or set -Ua fish_user_paths ~/.linuxbrew/bin
@@ -8,6 +9,7 @@ alias no-false="pcregrep -M '.*:\n +[^F ]'"
 alias online-hubs="pepper '*' test.ping|pcregrep -M '.*:\n +[^F ]'|grep ":"|wc -l"
 
 alias vim nvim
+alias tf terraform
 #alias ls lsd
 #alias fd fdfind
 #alias cat bat
@@ -22,6 +24,7 @@ alias gs "git status"
 alias gd "git diff"
 alias gd "git pull"
 alias p pepper
+alias bat batcat
 
 
 alias prune "docker system prune --volumes"
