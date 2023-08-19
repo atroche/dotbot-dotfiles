@@ -22,6 +22,9 @@
 ;; Plugins to be managed by packer.
 (use :wbthomason/packer.nvim {}
      :Olical/aniseed {}
+
+     :airblade/vim-gitgutter {}
+
      :Olical/fennel {}
      :sbdchd/neoformat {:mod :neoformat}
      :lifepillar/vim-solarized8 {}
