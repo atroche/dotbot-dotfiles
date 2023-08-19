@@ -23,11 +23,10 @@
 (use :wbthomason/packer.nvim {}
      :Olical/aniseed {}
 
-     :airblade/vim-gitgutter {}
-
      :Olical/fennel {}
      :sbdchd/neoformat {:mod :neoformat}
      :lifepillar/vim-solarized8 {}
+
      :preservim/nerdtree {}
      :mitsuhiko/vim-jinja {}
      :saltstack/salt-vim {}
@@ -59,6 +58,7 @@
      :nvim-treesitter/nvim-treesitter {:mod :treesitter}
 
      :jghauser/mkdir.nvim {:config (fn [] (require :mkdir))}
+     :lewis6991/gitsigns.nvim {:mod :gitsigns}
 
      :ggandor/lightspeed.nvim {:mod :lightspeed}
      :dag/vim-fish {}
