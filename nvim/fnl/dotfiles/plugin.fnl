@@ -22,10 +22,8 @@
 ;; Plugins to be managed by packer.
 (use :wbthomason/packer.nvim {}
      :Olical/aniseed {}
-     :Olical/conjure {}
      :Olical/fennel {}
      :sbdchd/neoformat {:mod :neoformat}
-     :airblade/vim-gitgutter {}
      :lifepillar/vim-solarized8 {}
      :preservim/nerdtree {}
      :mitsuhiko/vim-jinja {}
@@ -62,6 +60,7 @@
      :ggandor/lightspeed.nvim {:mod :lightspeed}
      :dag/vim-fish {}
      :hashivim/vim-terraform {}
+     :LnL7/vim-nix {}
      ; :rmagatti/auto-session {:mod :auto-session} ;    use {
      ; 
      ;    use {

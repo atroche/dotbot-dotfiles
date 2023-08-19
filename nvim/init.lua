@@ -44,6 +44,7 @@ normal_mode_bindings = {
     {"<Leader>t", ":tabnew<CR>"}, {"<C-k>b", ":NERDTreeToggle<CR>"},
     {"<C-P>", "<cmd>Telescope find_files<cr>"},
     {"<Leader>fg", "<cmd>Telescope live_grep<cr>"},
+    {"<Leader>ll", ":Neoformat"},
     {"<Leader>sv", ":source $MYVIMRC<CR>"}, {"<Leader>nh", ":noh<CR>"},
     {"<Leader>ob", ":'<,'>OpenGithubFile<CR>"},
     {"gd", "<cmd>lua vim.lsp.buf.definition()<CR>"}
