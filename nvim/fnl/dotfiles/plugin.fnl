@@ -24,6 +24,11 @@
      :Olical/aniseed {}
 
      :Olical/fennel {}
+     :bakpakin/fennel.vim {}
+     :nvim-telescope/telescope.nvim {:mod :telescope 
+                                     :requires [[:nvim-lua/popup.nvim] 
+                                                [:nvim-lua/plenary.nvim]]}
+
      :sbdchd/neoformat {:mod :neoformat}
      :lifepillar/vim-solarized8 {}
 
@@ -42,9 +47,6 @@
      :folke/which-key.nvim {:mod :which-key}
      :nvim-lua/popup.nvim {}
      :nvim-lua/plenary.nvim {}
-     :nvim-telescope/telescope.nvim {:mod :telescope 
-                                     :requires [[:nvim-lua/popup.nvim] 
-                                                [:nvim-lua/plenary.nvim]]}
      :pwntester/octo.nvim {:mod :octo
                            :requires [[:nvim-telescope/telescope.nvim]]}
 
@@ -64,6 +66,7 @@
      :dag/vim-fish {}
      :hashivim/vim-terraform {}
      :LnL7/vim-nix {}
+     :aileot/nvim-laurel {}
      ; :rmagatti/auto-session {:mod :auto-session} ;    use {
      ; 
      ;    use {

@@ -1,18 +1,20 @@
 [alias]
-	st = status
-	ci = commit
-	co = checkout
+    st = status
+    ci = commit
+    co = checkout
     # current branch
     cb = rev-parse --abbrev-ref HEAD
+    d = diff
+    ds = diff --staged
 [user]
-	name = Alistair Roche
-	email = alistair@seermedical.com
+    name = Alistair Roche
+    email = alistair@seermedical.com
 [push]
-	default = current
+    default = current
 [pull]
-	rebase = false
+    rebase = false
 [core]
-	editor = nvim
-	excludesFile = ~/.gitignore
+    editor = nvim
+    excludesFile = ~/.gitignore
 [init]
-	defaultBranch = main
+    defaultBranch = main

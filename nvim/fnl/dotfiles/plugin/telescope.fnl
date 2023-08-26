@@ -1,11 +1,16 @@
 (module dotfiles.plugin.telescope 
-  {autoload {nvim aniseed.nvim
-             util dotfiles.util}})
+  {require {{: nnoremap} dotfiles.util}
+   autoload {nvim aniseed.nvim
+             telescope telescope}})
              
+(telescope.setup {:pickers {:find_files {:find_command ["fd"
+                                                        "--type"
+                                                        "f"
+                                                        "--color=never"
+                                                        "--hidden"
+                                                        "--follow"
+                                                        "-E"
+                                                        ".git/*"]}}})
 
-
-
-(def map util.nnoremap)
-
-(map :<leader>pc "Telescope commands")
+(nnoremap :<leader>pc "Telescope commands")
 

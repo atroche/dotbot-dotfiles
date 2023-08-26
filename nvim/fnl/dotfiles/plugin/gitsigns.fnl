@@ -1,5 +1,8 @@
-(module dotfiles.plugin.treesitter
-  {require {gitsigns gitsigns}})
+(module dotfiles.plugin.gitsigns
+  {require {{: nnoremap} dotfiles.util
+            gs gitsigns}
+   autoload {core aniseed.core
+             telescope telescope}})
 
-(gitsigns.setup {})
+(gs.setup {})
 
