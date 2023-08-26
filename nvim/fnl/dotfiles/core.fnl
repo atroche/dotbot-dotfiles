@@ -8,3 +8,5 @@
 (set vim.o.shiftwidth 4)
 (set vim.o.expandtab true)
 (set vim.o.background :dark)
+(set nvim.g.mapleader ",")
+(set nvim.g.maplocalleader " ")

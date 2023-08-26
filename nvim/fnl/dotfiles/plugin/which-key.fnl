@@ -84,7 +84,9 @@
                                     ;; most people should not need to change this
                                     :i [:j :k]
                                     :v [:j :k]}})
-  (plug.register {:h {:name :gitsigns
+  (plug.register {:p {:name misc
+                      :c ["<cmd>Telescope commands<cr>" "Telescope commands"]}
+                  :h {:name :gitsigns
                       :s [gs.stage_hunk "Stage Hunk"]
                       :r [gs.reset_hunk "Reset Hunk"]
                       :S [gs.stage_buffer "Stage Buffer"]
